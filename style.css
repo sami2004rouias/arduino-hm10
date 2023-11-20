@@ -1,0 +1,139 @@
+/* Stile generale */
+@font-face {
+    font-family: 'future';
+    src: url('KrestSans-Bold.otf') format('opentype');
+    src: url('KrestSans-Light.otf') format('opentype');
+    src: url('KrestSans.otf') format('opentype');
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background-image: url('background.jpg');
+}
+.ledImg{
+    width: 40%;
+    height: auto;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    position: absolute;
+    filter: invert(1);
+}
+#led{
+    text-align: center;
+    font-family: future;
+    padding: 7%;
+    width: 10%; /* Modifica la larghezza dei pulsanti */
+    height: 10%;
+    margin: 0;
+    position: absolute;
+    top:80%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+button {
+    text-align: left;
+    background: transparent;
+    margin-top: 10%;
+    margin-bottom: 2%;
+    margin-left: 8%;
+    font-family: 'future';
+    border: none;
+    color: #ffffff;
+    cursor: pointer;
+    width: 80%; /* Modifica la larghezza del pulsante */
+}
+
+p {
+    margin-left: 8%;
+}
+
+button:hover {
+    background-color: rgba(106, 106, 146, 0.682);
+    box-shadow: 0 0 5px rgb(106, 106, 146),
+        0 0 25px rgb(106, 106, 146), 0 0 50px rgb(106, 106, 146),
+        0 0 100px rgb(106, 106, 146), 0 0 200px rgb(106, 106, 146);
+}
+
+#status {
+    text-align: left;
+    font-family: future;
+    color: white;
+    padding-left: 2%;
+}
+
+#connect {
+    text-align: left;
+    vertical-align: middle;
+
+}
+
+#up{
+    text-align: center;
+    font-family: future;
+    padding: 7%;
+    width: 20%; /* Modifica la larghezza dei pulsanti */
+    margin: 0;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#down{
+    text-align: center;
+    font-family: future;
+    padding: 7%;
+    width: 20%; /* Modifica la larghezza dei pulsanti */
+    margin: 0;
+    position: absolute;
+    top:60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.divUp {
+    height: 30%; /* Modifica l'altezza della parte superiore */
+    width: 100%;
+}
+
+.divB {
+    text-align: center;
+    height: 70%; /* Modifica l'altezza della parte inferiore */
+    width: 100%;
+}
+
+.divsu {
+    position: static;
+}
+
+.divsame {
+    display: inline-block;
+    padding: 10%;
+}
+
+#menu {
+    width: 1%; /* Modifica la larghezza dell'icona del menu */
+    height: auto;
+    margin-right: 1%;
+    text-align: left;
+}
+
+/* Aggiungi un media query per dispositivi con larghezza massima di 600px (tipicamente smartphone) */
+@media only screen and (max-width: 600px) {
+    #up,
+    #down, #led {
+        width: 30%; /* Rendi i pulsanti larghi al 100% su schermi più piccoli */
+    }
+
+    button {
+        width: 50%; /* Rendi i pulsanti larghi al 100% su schermi più piccoli */
+    }
+
+    #menu {
+        width: 10%; /* Modifica la larghezza dell'icona del menu per adattarsi a schermi più piccoli */
+        margin-right: 2%;
+    }
+}
