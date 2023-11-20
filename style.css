@@ -27,7 +27,7 @@ body {
     height: 10%;
     margin: 0;
     position: absolute;
-    top:80%;
+    top:90%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -81,6 +81,18 @@ button:hover {
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+#stop{
+    text-align: center;
+    font-family: future;
+    padding: 7%;
+    width: 20%; /* Modifica la larghezza dei pulsanti */
+    margin: 0;
+    position: absolute;
+    top: 55%;
+    left: 47%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
 #down{
     text-align: center;
     font-family: future;
@@ -88,7 +100,7 @@ button:hover {
     width: 20%; /* Modifica la larghezza dei pulsanti */
     margin: 0;
     position: absolute;
-    top:60%;
+    top:70%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
