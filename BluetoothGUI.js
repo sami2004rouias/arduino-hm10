@@ -40,6 +40,7 @@ function setup() {
   document.getElementById('up').addEventListener('mousedown', startUP);
   document.getElementById('up').addEventListener('mouseup', stopCommand);
   document.getElementById('led').addEventListener('click', LED);
+  document.getElementById('stop').addEventListener('click', STOP);
   document.getElementById('down').addEventListener('mousedown', startDOWN);
   document.getElementById('down').addEventListener('mouseup', stopCommand);
   document.querySelector('#connect').onclick = connectToBle;
@@ -49,7 +50,10 @@ function setup() {
     sendData("U");
     console.log("UP pressed");
   }
-
+  function STOP() {
+    sendData("S");
+    console.log("UP pressed");
+  }
   function startDOWN() {
     sendData("D");
     console.log("DOWN pressed");
