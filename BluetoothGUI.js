@@ -37,12 +37,11 @@ function setup() {
   // Create a p5ble class
   console.log("setting up");
   blueTooth = new p5ble();
-  document.getElementById('up').addEventListener('mousedown', startUP);
-  document.getElementById('up').addEventListener('mouseup', stopCommand);
+  document.getElementById('up').addEventListener('click', startUP);
   document.getElementById('led').addEventListener('click', LED);
   document.getElementById('stop').addEventListener('click', STOP);
-  document.getElementById('down').addEventListener('mousedown', startDOWN);
-  document.getElementById('down').addEventListener('mouseup', stopCommand);
+  document.getElementById('down').addEventListener('click', startDOWN);
+  
   document.querySelector('#connect').onclick = connectToBle;
   
   
@@ -59,10 +58,6 @@ function setup() {
     console.log("DOWN pressed");
   }
 
-  function stopCommand() {
-    sendData("S");
-    console.log("Button released");
-  }
   function LED() {
     sendData("L");
     console.log("Button released");
