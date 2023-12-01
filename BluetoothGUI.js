@@ -31,7 +31,7 @@ var millisecondTimerStart;
 
 function setup() {
 
-  createCanvas(windowWidth, windowHeight);
+  
   
   
   // Create a p5ble class
