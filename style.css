@@ -45,21 +45,30 @@ button:hover {
     text-align: left;
     font-family: future;
     color: white;
-    padding-left: 2%;
+    
 }
 
 #connect {
-    text-align: left;
+    text-align: center;
     vertical-align: middle;
+    align-items: center;
+    display: flex;
+    padding: 0;
+    width: 30vw;
+    height: 5vh;
 
+}
+.divUp {
+    height: 15vh;
+    display: block;
 }
 .divSu {
     display: grid;
     gap: 2vh;
-    grid-template-columns: 50vw;
+    grid-template-columns: 30vw;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    height: 60vh;
     
 }
 .ledImg{
@@ -75,7 +84,11 @@ button:hover {
     padding: 7%;
     width: 100% !important;
     margin: 0;
-    height: 80%;
+    height: 100%;
+    background-color: rgba(106, 106, 146, 0.2);
+    box-shadow: 0 0 5px rgba(106, 106, 146, 0.2),
+        0 0 25px rgba(106, 106, 146, 0.2), 0 0 50px rgba(106, 106, 146, 0.2),
+        0 0 100px rgba(106, 106, 146, 0.2), 0 0 200px rgba(106, 106, 146, 0.2);
     
 }
 #up{
@@ -85,6 +98,10 @@ button:hover {
     margin: 0;
     width: 100% !important;
     height: 80%;
+    background-color: rgba(106, 106, 146, 0.2);
+    box-shadow: 0 0 5px rgba(106, 106, 146, 0.2),
+        0 0 25px rgba(106, 106, 146, 0.2), 0 0 50px rgba(106, 106, 146, 0.2),
+        0 0 100px rgba(106, 106, 146, 0.2), 0 0 200px rgba(106, 106, 146, 0.2);
     
     
 }
@@ -94,6 +111,10 @@ button:hover {
     margin: 0;
     height: 80%;
     width: 100% !important;
+    background-color: rgba(106, 106, 146, 0.2);
+    box-shadow: 0 0 5px rgba(106, 106, 146, 0.2),
+        0 0 25px rgba(106, 106, 146, 0.2), 0 0 50px rgba(106, 106, 146, 0.2),
+        0 0 100px rgba(106, 106, 146, 0.2), 0 0 200px rgba(106, 106, 146, 0.2);
     
 }
 #down{
@@ -102,12 +123,11 @@ button:hover {
     margin: 0;
     height: 80%;
     width: 100% !important;
+    background-color: rgba(106, 106, 146, 0.2);
+    box-shadow: 0 0 5px rgba(106, 106, 146, 0.2),
+        0 0 25px rgba(106, 106, 146, 0.2), 0 0 50px rgba(106, 106, 146, 0.2),
+        0 0 100px rgba(106, 106, 146, 0.2), 0 0 200px rgba(106, 106, 146, 0.2);
     
-}
-
-.divUp {
-    height: 30vh;
-    display: block;
 }
 
 
@@ -117,10 +137,11 @@ button:hover {
 }
 
 #menu {
-    width: 1%; /* Modifica la larghezza dell'icona del menu */
+    width: 10%; /* Modifica la larghezza dell'icona del menu */
     height: auto;
     margin-right: 1%;
     text-align: left;
+    padding-right:1vw;
 }
 
 /* Aggiungi un media query per dispositivi con larghezza massima di 600px (tipicamente smartphone) */
